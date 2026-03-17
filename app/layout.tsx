@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Local SEO Auditor - Professional Dashboard",
-  description: "Professional-grade analysis and optimization for your Google Business Profile. Gain precision insights and execute actionable strategies to secure local search dominance.",
+  title: "AI Content Engine - Built by Michael Eyo",
+  description: "AI-powered content intelligence platform. Generate strategic content with keyword analysis, SERP intelligence, and automated content creation. Built with Claude Code.",
 };
 
 export default function RootLayout({
@@ -26,7 +24,6 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} bg-background-light dark:bg-slate-950 font-display text-slate-900 dark:text-slate-100 antialiased`}>
         {children}
-        <Analytics />
       </body>
     </html>
   );
